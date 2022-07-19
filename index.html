@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow generator</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="generator">
+    <h1 class="generator__title">Text-shadow generator</h1>
+    <div class="generator__inner">
+      <!-- --------------------- -->
+      <div class="card">
+        <div class="card__header">
+          <h2 class="card__title">Настройки:</h2>
+        </div>
+        <div class="card__body">
+          <h3 class="card__range-name">Размер шрифта</h3>
+          <div class="card__range-container">
+            <label class="card__label" for="fontsize"></label>
+            <input class="card__range-input" id="fontsize" type="range" min="8" max="50" step="1" value="40">
+          </div>
+          <h3 class="card__range-name">Смещение по оси х</h3>
+          <div class="card__range-container">
+            <label class="card__label" for="offset-x"></label>
+            <input class="card__range-input" id="offset-x" type="range" min="-15" max="15" step="1" value="4">
+          </div>
+          <h3 class="card__range-name">Смещение по оси у</h3>
+          <div class="card__range-container">
+            <label class="card__label" for="offset-y"></label>
+            <input class="card__range-input" id="offset-y" type="range" min="-15" max="15" step="1" value="4">
+          </div>
+          <h3 class="card__range-name">Размытие</h3>
+          <div class="card__range-container">
+            <label class="card__label" for="blur"></label>
+            <input class="card__range-input" id="blur" type="range" min="0" max="15" step="1" value="0">
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------------- -->
+      <div class="card">
+        <div class="card__header">
+          <h2 class="card__title">Цвет:</h2>
+        </div>
+        <div class="card__body">
+          <div class="card__range-container">
+            <input class="card__range-input" id="color" type="color" value="#ff0000">
+          </div>
+          <h3 class="card__range-name">Прозрачность</h3>
+          <div class="card__range-container">
+            <label class="card__label" for="opacity"></label>
+            <input class="card__range-input" id="opacity" type="range" min="0" max="1" step="0.01" value="1">
+          </div>
+        </div>
+        <!-- ---------------------- -->
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <h2 class="card__title">Результат:</h2>
+        </div>
+        <div class="card__body">
+          <h3 class="card__range-name">Цвет в HEX</h3>
+          <div class="card__code-box">
+            <label class="card__label" for="resalt-HEX"></label>
+            <textarea class="card__resalt" id="resalt-HEX" cols="30" rows="4" readonly></textarea>
+          </div>
+          <h3 class="card__range-name">Цвет в RGBA</h3>
+          <div class="card__code-box">
+            <label class="card__label" for="resalt-RGB"></label>
+            <textarea class="card__resalt" id="resalt-RGB" cols="30" rows="4" readonly></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------- -->
+    </div>
+  </section>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

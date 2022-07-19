@@ -1,0 +1,96 @@
+body{
+  
+}
+.generator {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgb(218, 213, 213);
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items:center;
+  padding: 50px 20px;
+}
+.generator__title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.generator__inner{
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.card__header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(77, 120, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+.card__body {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(136, 243, 132);
+  padding: 20px 10px;
+}
+.card__range-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card__range-container {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__label {
+}
+.card__range-input {
+  width: 100%;
+  cursor: pointer;
+}
+#color{
+  width: 50px;
+  height: 50px;
+
+}
+.card:nth-child(3) .card__range-name{
+  margin-bottom: 10px;
+}
+.card__code-box {
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 30px;
+}
+.card__resalt {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background-color: rgb(218, 213, 213);
+}
